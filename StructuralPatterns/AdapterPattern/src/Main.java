@@ -1,5 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        AudioPlayer audioPlayer = new AudioPlayer();
+
+        audioPlayer.play("mp3", "song.mp3");
+        audioPlayer.play("mp4", "movie.mp4");
+        audioPlayer.play("vlc", "video.vlc");
+        audioPlayer.play("avi", "myMovie.avi");
     }
 }
