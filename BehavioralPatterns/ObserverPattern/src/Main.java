@@ -1,5 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Subject subject = new Subject();
+
+        Observer observer1 = new ConcreteObserver("Observer 1");
+        Observer observer2 = new ConcreteObserver("Observer 2");
+
+        subject.addObserver(observer1);
+        subject.addObserver(observer2);
+
+        subject.setMessage("Hello Observers!");
+        subject.setMessage("Observer Pattern Example");
     }
 }
